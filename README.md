@@ -7,6 +7,12 @@ This project is written for Alexa. It is a song match game. You can pick a artis
 
 The game is named "mark's song match game". To start the game, you may say, "Alexa, open mark's song match game".
 
+## Artists that are available
+- Carpenters
+- Beatles
+- Queen
+- Bach
+
 ## Tips for playing
 You may say repeat when you did not hear the question well. 
 You answer don't not be in complete sentences. Simple phrases would work very well. For exmaple, say "coke", "pepsi", "icecream", "mac", etc.
