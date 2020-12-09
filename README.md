@@ -14,4 +14,4 @@ You may stop the game anytime you would like by saying stop or exit.
 We don't record your data, so feel free to be honest with the questions ;).
 
 ## Game Screenshots
-![image info](C:/Users/limar/Downloads/SMSS1.png)
+![SMSS1](https://user-images.githubusercontent.com/32099214/101672571-09a56500-3a24-11eb-93cd-6b5c081588d0.png)
