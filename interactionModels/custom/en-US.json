@@ -1,0 +1,133 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mark\u0027s song match game",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "ArtistIntent",
+          "slots": [
+            {
+              "name": "musician",
+              "type": "musician"
+            }
+          ],
+          "samples": [
+            "{musician}"
+          ]
+        },
+        {
+          "name": "InProgressMatchIntent",
+          "slots": [
+            {
+              "name": "answer",
+              "type": "answers"
+            }
+          ],
+          "samples": [
+            "{answer}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "ice cream"
+              }
+            },
+            {
+              "name": {
+                "value": "pepsi"
+              }
+            },
+            {
+              "name": {
+                "value": "coke"
+              }
+            },
+            {
+              "name": {
+                "value": "windows"
+              }
+            },
+            {
+              "name": {
+                "value": "mac"
+              }
+            },
+            {
+              "name": {
+                "value": "custard"
+              }
+            }
+          ],
+          "name": "answers"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "queen"
+              }
+            },
+            {
+              "name": {
+                "value": "beatles"
+              }
+            },
+            {
+              "name": {
+                "value": "carpenters"
+              }
+            },
+            {
+              "name": {
+                "value": "bach"
+              }
+            }
+          ],
+          "name": "musician"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "7"
+}

@@ -1,0 +1,48 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:404757809548:function:e43482d3-1b4c-40c9-9c3f-ed9c83624435:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:404757809548:function:e43482d3-1b4c-40c9-9c3f-ed9c83624435:Release_0"
+            }
+          },
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:404757809548:function:e43482d3-1b4c-40c9-9c3f-ed9c83624435:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:404757809548:function:e43482d3-1b4c-40c9-9c3f-ed9c83624435:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-US": {
+          "description": "Guess a number, and Alexa will tell you if you need to guess higher or lower. She will also tell you how many times you have played.",
+          "examplePhrases": [
+            "Alexa open high low game",
+            "Alexa start high low game",
+            "Alexa ask high low game is it {number}"
+          ],
+          "name": "Songmatch",
+          "summary": "Guess a number, and Alexa will tell you if you need to guess higher or lower."
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}
