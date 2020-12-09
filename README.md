@@ -15,3 +15,4 @@ We don't record your data, so feel free to be honest with the questions ;).
 
 ## Game Screenshots
 ![SMSS1](https://user-images.githubusercontent.com/32099214/101672571-09a56500-3a24-11eb-93cd-6b5c081588d0.png)
+![Screen Shot 2020-12-09 at 12 53 21 PM](https://user-images.githubusercontent.com/32099214/101672651-26419d00-3a24-11eb-88ba-598020dcbaea.png)
