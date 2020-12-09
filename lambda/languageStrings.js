@@ -24,6 +24,6 @@ module.exports = {
     QUESTION_3_REPROMPT: 'Do you prefer Pepsi or Coke?',
 
     FINAL_RESPONSE: 'Based on your answers, your %s Song Match is %s. Would you like to get another Song Match with a different artist?',
-    NO_MATCH: 'I am sorry. We could not match you with a song. You may retry the game if you want',
+    NO_MATCH: 'I am sorry. We could not match you with a song. Would you like to retry the game?',
   }
 };

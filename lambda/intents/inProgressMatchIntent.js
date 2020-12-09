@@ -1,4 +1,5 @@
 const Alexa = require('ask-sdk');
+const answerChecker = require('../helper');
 
 const InProgressMatchIntent = {
   canHandle(handlerInput) {
@@ -30,6 +31,13 @@ const InProgressMatchIntent = {
             .getResponse();
     } else if (sessionAttributes.questionNumber === 1) {
         // question 1: answer the prompt and add to string
+        // checking if it is legal. same below
+        if (answerChecker(answer,1)) {
+            return handlerInput.responseBuilder
+                .speak(requestAttributes.t('QUESTION_1_REPROMPT'))
+                .reprompt(requestAttributes.t('QUESTION_1_REPROMPT'))
+                .getResponse();
+        }
         sessionAttributes.answers = answer;
         sessionAttributes.questionNumber += 1;
         attributesManager.setPersistentAttributes(sessionAttributes);
@@ -40,6 +48,13 @@ const InProgressMatchIntent = {
             .getResponse();
     } else if (sessionAttributes.questionNumber === 2) {
         // question 2: answer the prompt and add to string
+        if (answerChecker(answer,2)) {
+            return handlerInput.responseBuilder
+                .speak(requestAttributes.t('QUESTION_2_REPROMPT'))
+                .reprompt(requestAttributes.t('QUESTION_2_REPROMPT'))
+                .getResponse();
+        }
+        
         sessionAttributes.answers = sessionAttributes.answers + ' ' + answer;
         sessionAttributes.questionNumber += 1;
         attributesManager.setPersistentAttributes(sessionAttributes);
@@ -50,6 +65,13 @@ const InProgressMatchIntent = {
             .getResponse();
     }
     // the following the QUESTION_3; build a matching map for later matching first.
+    if (answerChecker(answer,3)) {
+        return handlerInput.responseBuilder
+            .speak(requestAttributes.t('QUESTION_3_REPROMPT'))
+            .reprompt(requestAttributes.t('QUESTION_3_REPROMPT'))
+            .getResponse();
+    }
+
     const matchingMaps = {
         'carpenters': {
             'ice cream mac pepsi': 'Yesterday Once More',
