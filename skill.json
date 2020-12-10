@@ -1,5 +1,32 @@
 {
   "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Pick an Artist. Answer three questions. You will be matched to the best song!",
+          "examplePhrases": [
+            "Alexa open mark\u0027s song match game",
+            "Alexa start mark\u0027s song match game",
+            "alexa, open mark\u0027s song match game"
+          ],
+          "keywords": [],
+          "name": "Mark\u0027s Song Match Game",
+          "description": "Song Match can help you understand which song by your favorite artist best matches your life.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "updatesDescription": "",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [],
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions: \n\nStart the game by: Open Mark\u0027s song match game\n\nPick artist from of the four: Carpenters, Beatles, Queen, Bach\n\nTry to Answer all the question in a word (\"icecream\", \"mac\", \"windows\", etc)\n\nYou may say stop and repeat.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
     "apis": {
       "custom": {
         "endpoint": {
@@ -7,14 +34,14 @@
         },
         "interfaces": [],
         "regions": {
-          "NA": {
-            "endpoint": {
-              "uri": "arn:aws:lambda:us-east-1:404757809548:function:e43482d3-1b4c-40c9-9c3f-ed9c83624435:Release_0"
-            }
-          },
           "EU": {
             "endpoint": {
               "uri": "arn:aws:lambda:eu-west-1:404757809548:function:e43482d3-1b4c-40c9-9c3f-ed9c83624435:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:404757809548:function:e43482d3-1b4c-40c9-9c3f-ed9c83624435:Release_0"
             }
           },
           "FE": {
@@ -26,23 +53,15 @@
       }
     },
     "manifestVersion": "1.0",
-    "publishingInformation": {
-      "category": "EDUCATION_AND_REFERENCE",
-      "distributionCountries": [],
-      "isAvailableWorldwide": true,
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
       "locales": {
-        "en-US": {
-          "description": "Guess a number, and Alexa will tell you if you need to guess higher or lower. She will also tell you how many times you have played.",
-          "examplePhrases": [
-            "Alexa open high low game",
-            "Alexa start high low game",
-            "Alexa ask high low game is it {number}"
-          ],
-          "name": "Songmatch",
-          "summary": "Guess a number, and Alexa will tell you if you need to guess higher or lower."
-        }
+        "en-US": {}
       },
-      "testingInstructions": "Sample Testing Instructions."
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
     }
   }
 }
